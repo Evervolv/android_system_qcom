@@ -418,7 +418,7 @@ s32 wifi_qsap_stop_bss(void)
     close(sock);
 
     if (ret) {
-        ALOGE("IOCTL stopbss failed: %d", (int)ret);
+        ALOGE("IOCTL stopbss failed: %d", ret);
         ret = eERR_STOP_BSS;
     } else {
         ALOGD("STOP BSS ISSUED");
